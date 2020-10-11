@@ -7,6 +7,7 @@ const MenuPage = (props) => {
     return (
         <div className={classes.App}>
             <header className={classes.AppHeader}>
+            <div data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></div>
             <img src={logo} className={classes.AppLogo} alt="logo" />
             <p>
                 Edit <code>src/App.js</code> and save to reload.

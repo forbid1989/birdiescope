@@ -4,7 +4,8 @@ import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from "materialize-css";
 import Aux from "./hoc/Auxilliary";
-import MenuPage from "./Containers/MenuPage/MenuPage"
+import MenuPage from "./Containers/MenuPage/MenuPage";
+import Layout from "./Containers/Layout/Layout"
 
 class App extends Component {
   componentDidMount() {
@@ -13,13 +14,12 @@ class App extends Component {
   }
 
   render() {
-    // let routes = (
-    //   <Switch>
-    //     <Route path="/auth" component={asyncAuth} />
-    //     <Route path="/" exact component={BurgerBuilder} />
-    //     <Redirect to="/" />
-    //   </Switch>
-    // );
+    let routes = (
+      <Switch>
+          <Route path="/" exact component={MenuPage} />
+          <Redirect to="/" />
+        </Switch>
+    );
 
     // if (this.props.isAuthenticated) {
     //   routes = (
@@ -36,10 +36,9 @@ class App extends Component {
 
     return (
       <Aux>
-        <Switch>
-          <Route path="/" exact component={MenuPage} />
-          <Redirect to="/" />
-        </Switch>
+        <Layout>
+          {routes}
+        </Layout>
       </Aux>
     );
   }
