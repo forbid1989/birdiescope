@@ -2,14 +2,13 @@ import React, {Component} from 'react';
 import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
-import M from "materialize-css";
+import M from 'materialize-css/dist/js/materialize.min.js';
 import Aux from "./hoc/Auxilliary";
 import MenuPage from "./Containers/MenuPage/MenuPage";
 import Layout from "./Containers/Layout/Layout"
 
 class App extends Component {
   componentDidMount() {
-
     M.AutoInit();
   }
 
