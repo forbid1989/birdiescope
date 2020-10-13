@@ -1,0 +1,12 @@
+.CloseSideBarButton {
+  margin: 10px 0;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.CloseIcon {
+  color: #f2e0d0;
+}

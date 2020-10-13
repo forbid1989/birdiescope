@@ -2,4 +2,18 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .Drawer {
+    background-size: auto;
+    width: 70%;
+  }
+}
+
+.DrawerItems {
+  width: 100%;
 }
