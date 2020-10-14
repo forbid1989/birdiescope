@@ -16,7 +16,7 @@ const Drawer = (props) => {
     const closeButtonHandler = () => {
 
         let instance = M.Sidenav.getInstance('.sidenav');
-        console.log("hello");
+        instance.close();
 
     }
 
