@@ -17,3 +17,7 @@
 .DrawerItems {
   width: 100%;
 }
+
+.DrawerItems :hover {
+  background-color: red;
+}
