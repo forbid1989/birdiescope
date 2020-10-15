@@ -14,10 +14,15 @@
   }
 }
 
-.DrawerItems {
+.DrawerItems,
+.CloseSidebarContainer {
   width: 100%;
 }
 
-.DrawerItems :hover {
-  background-color: red;
+.DrawerItems > div {
+  transition: 0.3s;
+}
+
+.DrawerItems > div:hover {
+  background-color: rgba(245, 200, 87, 0.2);
 }

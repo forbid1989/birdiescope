@@ -5,6 +5,8 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import Aux from "./hoc/Auxilliary";
 import MenuPage from "./Containers/MenuPage/MenuPage";
+import OrderAndDeliveryPage from "./Containers/OrderAndDeliveryPage/OrderAndDeliveryPage";
+import DeliveryLocationPage from "./Containers/DeliveryLocationPage/DeliveryLocationPage";
 import Layout from "./Containers/Layout/Layout"
 
 class App extends Component {
@@ -15,8 +17,10 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-          <Route path="/" exact component={MenuPage} />
-          <Redirect to="/" />
+          <Route path="/handling" component={OrderAndDeliveryPage} />
+          <Route path="/delivery" component={DeliveryLocationPage} />
+          <Route path="/menu" component={MenuPage} />
+          <Redirect to="/menu" />
         </Switch>
     );
 

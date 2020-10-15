@@ -22,10 +22,10 @@ const Drawer = (props) => {
 
     return (
         <ul id="slide-out" className={`sidenav ${classes.Drawer}`} style={{backgroundImage:`url(${drawerImage})`}}>
-            <li className={classes.DrawerItems}><CloseSideBarButton closeButtonHandler={closeButtonHandler}/></li>
-            <li className={classes.DrawerItems}><DrawerItem link="/">item1</DrawerItem></li>
-            <li className={classes.DrawerItems}><DrawerItem link="/">item2</DrawerItem></li>
-            <li className={classes.DrawerItems}><DrawerItem link="/">item3</DrawerItem></li>
+            <li className={classes.CloseSidebarContainer}><CloseSideBarButton closeButtonHandler={closeButtonHandler}/></li>
+            <li className={classes.DrawerItems}><DrawerItem link="/menu">Menu Management</DrawerItem></li>
+            <li className={classes.DrawerItems}><DrawerItem link="/delivery">Delivery Location Management</DrawerItem></li>
+            <li className={classes.DrawerItems}><DrawerItem link="/handling">Order & Delivery Handling</DrawerItem></li>
         </ul>
     )
 
