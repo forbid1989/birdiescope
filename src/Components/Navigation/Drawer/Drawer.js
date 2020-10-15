@@ -23,9 +23,9 @@ const Drawer = (props) => {
     return (
         <ul id="slide-out" className={`sidenav ${classes.Drawer}`} style={{backgroundImage:`url(${drawerImage})`}}>
             <li className={classes.CloseSidebarContainer}><CloseSideBarButton closeButtonHandler={closeButtonHandler}/></li>
-            <li className={classes.DrawerItems}><DrawerItem link="/menu">Menu Management</DrawerItem></li>
-            <li className={classes.DrawerItems}><DrawerItem link="/delivery">Delivery Location Management</DrawerItem></li>
-            <li className={classes.DrawerItems}><DrawerItem link="/handling">Order & Delivery Handling</DrawerItem></li>
+            <li className={classes.DrawerItems}><DrawerItem link="/menu"><i className={`material-icons ${classes.DrawerItemIcons}`}>restaurant_menu</i>Manage Menu</DrawerItem></li>
+            <li className={classes.DrawerItems}><DrawerItem link="/delivery"><i className={`material-icons ${classes.DrawerItemIcons}`}>place</i>Manage Delivery Location</DrawerItem></li>
+            <li className={classes.DrawerItems}><DrawerItem link="/handling"><i className={`material-icons ${classes.DrawerItemIcons}`}>golf_course</i>Order & Delivery Handling</DrawerItem></li>
         </ul>
     )
 

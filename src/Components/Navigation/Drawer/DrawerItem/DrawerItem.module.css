@@ -9,8 +9,9 @@
   color: #f2e0d0;
   text-decoration: none;
   width: 100%;
-  box-sizing: border-box;
-  display: block;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
 }
 
 .DrawerItem a:active,
